@@ -79,7 +79,7 @@ function parseHL7v2(msg) {
 
     for (var i = 0; i < segments.length; i++) {
         var fields = segments[i].split(fieldSeparator);
-        if (fields[0].length) // Checking that it is not an empty line at the end of the file. 
+        if (fields[0].length) // Checking that it is not an empty line at the end of the file.
         {
             var seg = CoverageArray.makeUndefinedAccessReporterArray(fields[0], i);
             out.v2.meta.push(fields[0]);
