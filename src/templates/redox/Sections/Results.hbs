@@ -1,0 +1,13 @@
+{{#if (eq msg.Meta.DataModel "Results") }}
+       {
+            "fullUrl": "urn:uuid:{{generateUUID (toJsonString msg)}}",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "{{generateUUID (toJsonString msg)}}",
+             }
+        
+        {{#each (toArray msg.Orders) as |order|}}
+            "order_id": {{order.ID}}
+        {{/each}}
+        }
+{{/if}}
