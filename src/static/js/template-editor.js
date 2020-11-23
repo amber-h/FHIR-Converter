@@ -400,7 +400,7 @@ function changeDataType(dataType) {
                     sizes: [30, 70]
                 });
 
-                dataEditor.setOption("mode", "text/html");
+                dataEditor.setOption("mode", "application/json");
                 break;
         }
     }
