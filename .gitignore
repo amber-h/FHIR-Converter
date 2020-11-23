@@ -69,3 +69,6 @@ typings/
 # app runtime data
 service-templates
 tmp/
+
+.idea/
+src/templates/.DS_Store
